@@ -40,7 +40,7 @@ class TestLogin:
         driver.find_element(*Locators.button_login).click()
 
         # Ждем входа в аккаунт
-        WebDriverWait(driver, 6).until(expected_conditions.visibility_of_element_located(Locators.button_checkout))
+        WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.button_checkout))
 
         # Проверяем текст кнопки
         assert driver.find_element(*Locators.button_checkout).text == "Оформить заказ"
@@ -63,7 +63,7 @@ class TestLogin:
         driver.find_element(*Locators.button_login).click()
 
         # Ждем входа в аккаунт
-        WebDriverWait(driver, 6).until(expected_conditions.visibility_of_element_located(Locators.button_checkout))
+        WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.button_checkout))
 
         # Проверяем текст кнопки
         assert driver.find_element(*Locators.button_checkout).text == "Оформить заказ"
@@ -89,7 +89,7 @@ class TestLogin:
         driver.find_element(*Locators.button_login).click()
 
         # Ждем входа в аккаунт
-        WebDriverWait(driver, 6).until(expected_conditions.visibility_of_element_located(Locators.button_checkout))
+        WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.button_checkout))
 
         # Проверяем текст кнопки
         assert driver.find_element(*Locators.button_checkout).text == "Оформить заказ"
