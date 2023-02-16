@@ -49,5 +49,3 @@ class TestTransitionToConstructor:
 
         # Проверяем URL
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
-
-

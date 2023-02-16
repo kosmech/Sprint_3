@@ -27,4 +27,3 @@ class TestConstructor:
 
         # Находим текст активного раздела и сравниваем
         assert driver.find_element(*Locators.active_section).text == 'Начинки'
-

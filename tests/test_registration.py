@@ -53,6 +53,3 @@ class TestRegistration:
 
         # Проверяем появление ошибки о неправильном пароле
         assert driver.find_element(*Locators.alert_password_fail)
-
-
-

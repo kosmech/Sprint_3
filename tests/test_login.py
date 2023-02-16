@@ -93,9 +93,3 @@ class TestLogin:
 
         # Проверяем текст кнопки
         assert driver.find_element(*Locators.button_checkout).text == "Оформить заказ"
-
-
-
-
-
-
