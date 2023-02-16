@@ -24,7 +24,7 @@ class TestClickPersonalAccount:
 
         # Ждем загрузку личного кабинета
         WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_element_located((By.XPATH, "//button[contains(text(),'Сохранить')]")))
+            expected_conditions.visibility_of_element_located(Locators.button_save))
 
         # Проверяем URL
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'

@@ -30,7 +30,7 @@ class TestLogout:
 
         # Ждем выхода из кабинета
         WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_element_located((By.XPATH, "//h2[contains(text(),'Вход')]")))
+            expected_conditions.visibility_of_element_located(Locators.title_login_page))
 
         # Проверяем URL
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/login'

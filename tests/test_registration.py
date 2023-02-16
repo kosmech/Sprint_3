@@ -24,8 +24,8 @@ class TestRegistration:
         driver.find_element(*Locators.button_registration).click()
 
         # Ждем загрузки страницы с "Вход"
-        WebDriverWait(driver, 6).until(
-            expected_conditions.visibility_of_element_located((By.XPATH, "//h2[contains(text(),'Вход')]")))
+        WebDriverWait(driver, 3).until(
+            expected_conditions.visibility_of_element_located(Locators.title_login_page))
 
         # Проверяем URL
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/login'

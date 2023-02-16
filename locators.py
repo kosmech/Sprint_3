@@ -35,6 +35,9 @@ class Locators:
     # Кнопка оформить заказ
     button_checkout = (By.XPATH, "//button[contains(text(),'Оформить заказ')]")
 
+    # Кнопка сохранить
+    button_save = (By.XPATH, "//button[contains(text(),'Сохранить')]")
+
     # Кнопка перехода в личный кабинет
     button_personal_account = (By.XPATH, "//p[contains(text(),'Личный Кабинет')]")
 
@@ -47,35 +50,23 @@ class Locators:
     # Кнопка выхода из Личного кабинета
     button_exit = (By.XPATH, "//button[contains(text(),'Выход')]")
 
-    # Секция Булки
+    # Раздел Булки
     section_bun = (By.XPATH, "//span[text() = 'Булки']")
 
-    # Секция соусов
+    # Раздел соусов
     section_sauce = (By.XPATH, "//span[text() = 'Соусы']")
 
-    # Секция Начинки
+    # Раздел Начинки
     section_filling = (By.XPATH, "//span[text() = 'Начинки']")
-
-    # Флюоресцентная булка
-    fluorescent_bun = "//p[contains(text(), 'Флюоресцентная булка')]"
 
     # Активная секция
     active_section = (By.XPATH, "//*[contains(@class, 'tab_tab_type_current')]")
 
-
-class AppHeader:
-    # Ссылка для входа в раздел конструктор
-    link_constructor =(By.XPATH, "//p[contains(text(),'Конструктор')]")
-
-    # Ссылка на логотип
-    logo = (By.CLASS_NAME, 'AppHeader_header__logo__2D0X2')
-
-
-class MainPage:
-
     # Заголовок на главной странице Соберите бургер
-    title_main_page = (By.XPATH, "//h1[text() = 'Соберите бургер']")
+    title_page = (By.XPATH, "//h1[text() = 'Соберите бургер']")
 
+    # Раздел конструктор
+    button_constructor = (By.XPATH, "//p[contains(text(),'Конструктор')]")
 
-    # Секция Начинки
-    filling_element = (By.XPATH, "//span[text() = 'Начинки']")
+    # Логотип
+    logo = (By.CLASS_NAME, 'AppHeader_header__logo__2D0X2')
