@@ -70,3 +70,12 @@ class Locators:
 
     # Логотип
     logo = (By.CLASS_NAME, 'AppHeader_header__logo__2D0X2')
+
+    # Заголовок "Булки"
+    title_bul = (By.XPATH, "//h2[contains(text(), 'Булки')]")
+
+    # Заголовок "Соусы"
+    title_sauce = (By.XPATH, "//h2[contains(text(), 'Соусы')]")
+
+    # Заголовок "Начинки"
+    title_filling = (By.XPATH, "//h2[contains(text(), 'Начинки')]")

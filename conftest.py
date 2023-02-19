@@ -9,8 +9,9 @@ url = 'https://stellarburgers.nomoreparties.site/'
 
 @pytest.fixture()
 def driver():
-    driver = webdriver.Chrome()
-    driver.maximize_window()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('--window-size=1280,720')
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get(url)
     yield driver
     driver.quit()
